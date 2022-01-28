@@ -4,17 +4,17 @@
 <form action="{{ route('admin.item.add') }}" method="post">
   @csrf
 
-  <div>
+  <div class="form-floating mb-3">
+    <input class="form-control" type="text" name="name">
     <label for="">{{ __('label.item_name') }}</label>
-    <input type="text" name="name">
   </div>
-  <div>
+  <div class="form-floating mb-3">
+    <input class="form-control" type="text" name="code">
     <label for="">{{ __('label.item_code') }}</label>
-    <input type="text" name="code">
   </div>
-  <div>
+  <div class="form-floating mb-3">
+    <input class="form-control" type="number" name="price">
     <label for="">{{ __('label.price') }}</label>
-    <input type="number" name="price">
   </div>
 
   <button>{{ __('Update') }}</button>
